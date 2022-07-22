@@ -1,24 +1,26 @@
 <template>
+<div class="display">
   <Title />
+  <Hero />
+</div>
 </template>
 
 <script>
 import Title from './components/Title.vue';
+import Hero from './components/Hero.vue';
 export default {
   name: 'App',
   components: {
-    Title
+    Title,
+    Hero,
   }
 }
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style>
+  .display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 </style>
